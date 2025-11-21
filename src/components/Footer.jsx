@@ -1,41 +1,48 @@
-export default function Footer(){
+export default function Footer() {
   return (
-    <footer className="bg-white border-t border-slate-200">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-4 gap-10 text-sm text-slate-600">
-        <div>
-          <div className="h-9 w-9 rounded-md bg-slate-900 text-white grid place-items-center font-bold">WS</div>
-          <p className="mt-4">Global marketplace with curated products and fast worldwide shipping.</p>
+    <footer className="bg-slate-50 border-t border-slate-200">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+          <div>
+            <div className="text-slate-900 font-semibold mb-3">Shop</div>
+            <ul className="space-y-2 text-slate-600">
+              <li><a href="#" className="hover:text-blue-700">New Arrivals</a></li>
+              <li><a href="#" className="hover:text-blue-700">Best Sellers</a></li>
+              <li><a href="#" className="hover:text-blue-700">Gift Cards</a></li>
+            </ul>
+          </div>
+          <div>
+            <div className="text-slate-900 font-semibold mb-3">Help</div>
+            <ul className="space-y-2 text-slate-600">
+              <li><a href="#" className="hover:text-blue-700">Shipping</a></li>
+              <li><a href="#" className="hover:text-blue-700">Returns</a></li>
+              <li><a href="#" className="hover:text-blue-700">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <div className="text-slate-900 font-semibold mb-3">Company</div>
+            <ul className="space-y-2 text-slate-600">
+              <li><a href="#" className="hover:text-blue-700">About</a></li>
+              <li><a href="#" className="hover:text-blue-700">Careers</a></li>
+              <li><a href="#" className="hover:text-blue-700">Press</a></li>
+            </ul>
+          </div>
+          <div>
+            <div className="text-slate-900 font-semibold mb-3">Get updates</div>
+            <form className="flex gap-2">
+              <input type="email" placeholder="Your email" className="flex-1 rounded-full border border-slate-300 bg-white px-4 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <button className="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700">Subscribe</button>
+            </form>
+          </div>
         </div>
-        <div>
-          <h4 className="text-slate-900 font-semibold mb-3">Shop</h4>
-          <ul className="space-y-2">
-            <li><a href="#" className="hover:text-slate-900">New Arrivals</a></li>
-            <li><a href="#" className="hover:text-slate-900">Best Sellers</a></li>
-            <li><a href="#" className="hover:text-slate-900">Gift Guides</a></li>
-            <li><a href="#" className="hover:text-slate-900">Outlet</a></li>
-          </ul>
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+          <div>© {new Date().getFullYear()} World Shop. All rights reserved.</div>
+          <div className="mt-2 sm:mt-0 flex items-center gap-4">
+            <a href="#" className="hover:text-blue-700">Privacy</a>
+            <a href="#" className="hover:text-blue-700">Terms</a>
+            <a href="#" className="hover:text-blue-700">Cookies</a>
+          </div>
         </div>
-        <div>
-          <h4 className="text-slate-900 font-semibold mb-3">Support</h4>
-          <ul className="space-y-2">
-            <li><a href="#" className="hover:text-slate-900">Help Center</a></li>
-            <li><a href="#" className="hover:text-slate-900">Shipping</a></li>
-            <li><a href="#" className="hover:text-slate-900">Returns</a></li>
-            <li><a href="#" className="hover:text-slate-900">Track Order</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="text-slate-900 font-semibold mb-3">Company</h4>
-          <ul className="space-y-2">
-            <li><a href="#" className="hover:text-slate-900">About</a></li>
-            <li><a href="#" className="hover:text-slate-900">Careers</a></li>
-            <li><a href="#" className="hover:text-slate-900">Press</a></li>
-            <li><a href="#" className="hover:text-slate-900">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div className="border-t border-slate-200 py-6 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} World Shop. All rights reserved.
       </div>
     </footer>
   )
